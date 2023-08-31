@@ -14,8 +14,8 @@
     <p>Followers : <%= data.followers %> &nbsp;&nbsp;&nbsp;&nbsp; Followings : <%= data.following %></p>
     <hr>
 
-    <%for (let post of data.posts) { %>
-        <img src="<% post.image %>" alt="img">
+    <% for (let post of data.posts) { %>
+        <img src="<%= post.image %>" alt="img">
         <p>Likes : <%= post.likes %> &nbsp;&nbsp;&nbsp;&nbsp; Comments : <%= post.comments %></p>
     <%}%>
 
